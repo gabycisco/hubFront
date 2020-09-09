@@ -1,0 +1,121 @@
+.botonPrimario{
+    background-color: $color-3;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background: #60D5FD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 7px;
+    font-weight: 900;
+    
+}
+
+.botonContenido{
+    background-color: $color-9;
+    border-radius: 5px;
+    border: none;
+    color: $color-4;    
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 7px;
+    _font-weight: 900;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 15px;    
+    font-size: .8rem;
+}
+
+
+.contenedorScroll{
+    overflow-y: scroll;
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.tituloProducto{
+    background-color: $color-3;
+    border-radius: 13px 13px 0 0 !important;
+    border: none;
+    color: white;
+    background: #60D5FD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 7px;
+    font-weight: 900;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    .contProducto{
+        .text{
+            width: 100%!important;
+            font-size: .8rem;
+        }
+    } 
+}
+
+.navbar{
+    box-shadow: 0px 3px 6px #00000029;
+    background-color: $color-5!important;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    img{
+        width: 35px;
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px!important;
+    padding-right: 10px;
+    align-items: center;
+    .otherBrand, .tecoBrand{
+        height: 35px;
+    }
+
+}
+
+
+.modal-content{
+    border-radius: 13px!important;
+    border: 0!important;
+    box-shadow: 8px 8px 9px #00000029!important;
+    .modal-header{
+        padding: 1rem 1rem 0 0!important;
+    }
+    .modal-body{
+        text-align: center;
+        .tituloModal{
+            color: $color-1;
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        .textModal, a{
+            color: $color-4;
+        }
+    }
+    .imgModal{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+h5, h6{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    color: $color-4;
+}

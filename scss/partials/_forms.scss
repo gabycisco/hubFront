@@ -1,0 +1,62 @@
+
+.form/* Formulario de login */
+    {    
+    
+    .field /* este componente contiene icono, label e input */
+        {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0 20px 0 0;
+        
+        .icon{
+            width: 50px;            
+            margin-bottom: 8px;
+            padding-right: 10px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            
+            img{
+                width: 20px;
+            }
+        }
+        
+        .toComplete/* contenedor: label + input */
+            {
+            width: calc(100% - 50px);
+            _background-color: green;
+      
+            label{
+                margin: 0;
+                margin-top: 10px;
+                font-size: 1rem;
+                color: $color-4;
+            }
+            
+            input{
+                width: 100%;
+                margin-bottom: 5px;                
+                font-size: 1rem;
+                border: 1px solid #e6e6e6;
+                border-radius: 5px;
+            }
+            
+        }
+        
+    }
+    
+    .link/* Link ¿Olvidaste tu contraseña? */
+    {
+        margin-bottom: 25px;                
+        width: 100%;
+        font-size: .9rem;
+        margin-left: 25px;
+        color:$color-1;
+    }
+
+    
+
+    
+}

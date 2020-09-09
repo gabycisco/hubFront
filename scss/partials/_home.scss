@@ -1,0 +1,44 @@
+.contProducto{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+
+    .text{
+        width: calc(100% - 50px);
+        text-align: left;
+        display: flex;
+        align-items: center;
+        .tituloItemSeleecionable{
+            font-weight: 300;
+        }
+    }
+}
+
+
+/* Botones de productos */
+.prod1, .prod2, .prod3, .prod4{
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.prod1{
+ background-color: $color-6 ;   
+}
+
+.prod2{
+    background-color: $color-7;   
+}
+
+.prod3{
+    background-color: $color-3;   
+}
+
+.prod4{
+    background-color: $color-8;   
+}
+
+
+.tituloItemSeleecionable{
+    font-weight: 300;
+}

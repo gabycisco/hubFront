@@ -1,0 +1,259 @@
+html {
+  font-size: 14px;
+  color: #707070; }
+
+.container-fluid {
+  background-color: #9660FD;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: flex; }
+  .container-fluid .displayLeft {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .container-fluid .displayLeft .imagenPrincipalLeft {
+      max-width: 500px;
+      width: 80%; }
+  .container-fluid .displayRight {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.botonPrimario {
+  background-color: #60D5FD;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #60D5FD 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 7px;
+  font-weight: 900; }
+
+.botonContenido {
+  background-color: #E3E3E3;
+  border-radius: 5px;
+  border: none;
+  color: #707070;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 7px;
+  _font-weight: 900;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 15px;
+  font-size: .8rem; }
+
+.contenedorScroll {
+  overflow-y: scroll;
+  height: 300px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.tituloProducto {
+  background-color: #60D5FD;
+  border-radius: 13px 13px 0 0 !important;
+  border: none;
+  color: white;
+  background: #60D5FD 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 7px;
+  font-weight: 900;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px; }
+  .tituloProducto .contProducto .text {
+    width: 100% !important;
+    font-size: .8rem; }
+
+.navbar {
+  box-shadow: 0px 3px 6px #00000029;
+  background-color: #874AFC !important;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .navbar img {
+    width: 35px; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px !important;
+  padding-right: 10px;
+  align-items: center; }
+  .footer .otherBrand, .footer .tecoBrand {
+    height: 35px; }
+
+.modal-content {
+  border-radius: 13px !important;
+  border: 0 !important;
+  box-shadow: 8px 8px 9px #00000029 !important; }
+  .modal-content .modal-header {
+    padding: 1rem 1rem 0 0 !important; }
+  .modal-content .modal-body {
+    text-align: center; }
+    .modal-content .modal-body .tituloModal {
+      color: #9660FD;
+      font-size: 1.5rem;
+      font-weight: bolder; }
+    .modal-content .modal-body .textModal, .modal-content .modal-body a {
+      color: #707070; }
+  .modal-content .imgModal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 15px; }
+
+h5, h6 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #707070; }
+
+.containerSendEmail {
+  background-color: #F5F5F5;
+  width: 450px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 8px 8px 9px #00000029;
+  display: block;
+  border-radius: 13px;
+  padding: 5rem 1.50rem 4rem 1.50rem; }
+  .containerSendEmail .imgPerfil {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px; }
+    .containerSendEmail .imgPerfil img {
+      width: 100%;
+      border: 5px solid white;
+      border-radius: 100px; }
+  .containerSendEmail .botonPrimario {
+    width: 80%;
+    margin-left: 10%; }
+
+.contProducto {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 30px; }
+  .contProducto .text {
+    width: calc(100% - 50px);
+    text-align: left;
+    display: flex;
+    align-items: center; }
+    .contProducto .text .tituloItemSeleecionable {
+      font-weight: 300; }
+
+/* Botones de productos */
+.prod1, .prod2, .prod3, .prod4 {
+  margin-bottom: 15px;
+  border-radius: 10px; }
+
+.prod1 {
+  background-color: #FE5B7E; }
+
+.prod2 {
+  background-color: #6084FD; }
+
+.prod3 {
+  background-color: #60D5FD; }
+
+.prod4 {
+  background-color: #7F3DFC; }
+
+.tituloItemSeleecionable {
+  font-weight: 300; }
+
+.form .field {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 20px 0 0; }
+  .form .field .icon {
+    width: 50px;
+    margin-bottom: 8px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    .form .field .icon img {
+      width: 20px; }
+  .form .field .toComplete {
+    width: calc(100% - 50px);
+    _background-color: green; }
+    .form .field .toComplete label {
+      margin: 0;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #707070; }
+    .form .field .toComplete input {
+      width: 100%;
+      margin-bottom: 5px;
+      font-size: 1rem;
+      border: 1px solid #e6e6e6;
+      border-radius: 5px; }
+.form .link {
+  margin-bottom: 25px;
+  width: 100%;
+  font-size: .9rem;
+  margin-left: 25px;
+  color: #9660FD; }
+
+.displayLeftLogin {
+  background-color: white !important;
+  z-index: 1030 !important; }
+  .displayLeftLogin .containerBienvenida {
+    max-width: 500px;
+    width: 80%; }
+    .displayLeftLogin .containerBienvenida .text {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .displayLeftLogin .containerBienvenida .text h1 {
+        text-align: center;
+        color: #60D5FD;
+        font-weight: bolder; }
+      .displayLeftLogin .containerBienvenida .text .light {
+        font-weight: lighter; }
+      .displayLeftLogin .containerBienvenida .text .imgHub {
+        width: 40px;
+        _background-color: red;
+        margin-top: 30px;
+        margin-left: 7px; }
+    .displayLeftLogin .containerBienvenida .imgPrincipal {
+      background-color: red;
+      display: flex;
+      justify-content: center; }
+
+.displayRight .containerLogin {
+  background-color: #F5F5F5;
+  width: 300px;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 8px 8px 9px #00000029;
+  display: block;
+  border-radius: 13px;
+  padding: 5rem 1.50rem 4rem 1.50rem; }
+  .displayRight .containerLogin .imgPerfil {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px; }
+    .displayRight .containerLogin .imgPerfil img {
+      width: 100%;
+      border: 5px solid white;
+      border-radius: 100px; }
+  .displayRight .containerLogin .botonPrimario {
+    width: 80%;
+    margin-left: 10%; }
+
+/*# sourceMappingURL=main.css.map */

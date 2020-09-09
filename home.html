@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="media/icons/ayuda.svg" alt=""></a>
+
+          </nav>
+        <div class="displayLeft">
+            
+            <div class="imagenPrincipalLeft">
+                <img src="media/imgs/chica1.svg" width="100%" alt="">
+            </div>
+            
+            
+        </div>
+        <div class="displayRight">
+            <div class="containerLogin" style="position: relative;">
+                <img src="media/imgs/puntosChiquitos.svg" width="13px" alt="" style="position: absolute; position: absolute; top: 35px; left: -30px;">
+                <img src="media/imgs/puntosGrandes.svg" width="20px" alt="" style="position: absolute; position: absolute; bottom: 20px; right: -30px;">
+
+                <h5>Seleccioná el producto</h5>
+                <button class="botonPrimario prod1">
+                    <div class="contProducto">
+                        <img src="media/icons/cableFiber.svg" width="40px" alt="">                    
+                        <div class="text">                    
+                            CABLE/FIBER    
+                        </div>
+                    </div>                    
+                </button>
+                <button class="botonPrimario prod2">
+                    <div class="contProducto">
+                        <img src="media/icons/teco.svg" width="40px" alt="">
+                        <div class="text">                    
+                            TELECOM
+                        </div>
+                    </div>    
+                </button>
+                <button class="botonPrimario prod3">                    
+                    <div class="contProducto">
+                        <img src="media/icons/personal.svg" width="40px" alt="" style="margin-bottom: 5px;">
+                        <div class="text">                    
+                            PERSONAL
+                        </div>
+                    </div>    
+                </button>
+                <button class="botonPrimario prod4">
+                    <div class="contProducto">
+                        <img src="media/icons/fibertelLite.svg" width="30px" alt="" style="margin-left: 5px; margin-bottom: 5px;">                        
+                        <div class="text">                    
+                            FIBERTEL LITE
+                        </div>
+                    </div>                        
+                </button>
+            </div>
+        </div>
+
+        <footer>
+            <nav class="footer fixed-bottom navbar-light bg-light" style="background-color: #b38bff!important;">
+                <img class="otherBrand" src="media/brands/others.svg"alt="">
+                <img class="tecoBrand" src="media/brands/teco.svg" alt="">
+            </nav>
+        </footer>
+
+        <!-- Modal Ayuda -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 50000;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header" style="border: 0;">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> -->
+                    <a href=""> <img src="media/buttons/cerrar.svg" width="22px" alt=""></a>
+                    </div>
+                    <div class="modal-body">
+                        <span class="tituloModal">¿Dudas o consultas?</br></span>
+                        <span class="textModal">Envianos un e-mail a <a href="mailto:asistenciaalaoperacion@teco.com.ar">asistenciaalaoperacion@teco.com.ar</a>.</span>
+                        <div class="imgModal">
+                            <img  src="media/imgs/DudasYConsultas.svg" width="30%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>    
+</body>
+</html>

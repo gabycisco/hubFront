@@ -1,0 +1,28 @@
+.container-fluid{
+    
+    background-color: $color-1;
+    width: 100%;
+    height: 100vh;
+    padding:0;
+    display: flex;
+    
+    .displayLeft{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .imagenPrincipalLeft{
+            max-width: 500px;        
+            width: 80%;
+        }
+    }
+
+    .displayRight{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
