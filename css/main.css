@@ -24,19 +24,20 @@ html {
   width: 100%;
   min-height: calc(100vh - 100px);
   display: flex;
-  background-color: #9660FD; }
+  background-color: #9660FD;
+  _min-height: 650px; }
 
 .containerLeft, .containerRight {
   background-color: #9660FD;
   width: 50%;
   _min-height: calc(100vh - 100px);
-  min-height: 600px;
+  _min-height: 600px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  min-height: 700px; }
 
 .containerWelcome {
-  _background-color: red;
   max-width: 32rem;
   width: 80%;
   display: block;
@@ -83,6 +84,29 @@ html {
       border: 5px solid white;
       border-radius: 10rem; }
 
+.containerSeleccion {
+  background-color: #F5F5F5;
+  width: 30rem;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 8px 8px 9px #00000029;
+  display: block;
+  border-radius: 13px;
+  padding: 4rem 2rem 3rem 2rem; }
+  .containerSeleccion h5 {
+    margin-top: 1rem; }
+
+.containerSendEmail {
+  background-color: #F5F5F5;
+  width: 30rem;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 8px 8px 9px #00000029;
+  display: block;
+  border-radius: 13px;
+  padding: 3rem 1.50rem 2.5rem 1.50rem; }
+  .containerSendEmail .botonPrimario {
+    width: 80%;
+    margin-left: 10%; }
+
 .returnButton {
   width: 2.5rem; }
 
@@ -99,6 +123,66 @@ html {
   width: 1.5rem;
   margin: 0 .5rem .5rem 0; }
 
+.adjuntoIcon {
+  position: absolute;
+  width: 1.75rem;
+  margin: 0 .5rem .5rem 0; }
+
+.prod1, .prod2, .prod3, .prod4 {
+  margin-bottom: 1rem; }
+
+.prod1 {
+  background-color: #FE5B7E !important; }
+
+.prod2 {
+  background-color: #6084FD !important; }
+
+.prod3 {
+  background-color: #60D5FD !important; }
+
+.prod4 {
+  background-color: #7F3DFC !important; }
+
+.containerEmailEnviado {
+  background-color: #F5F5F5;
+  max-width: 26.5rem;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 8px 8px 9px #00000029;
+  display: block;
+  border-radius: 13px;
+  padding: 3rem 1.25rem 2rem 1.25rem;
+  text-align: center;
+  color: #707070;
+  position: relative; }
+  .containerEmailEnviado h1 {
+    color: #60D5FD;
+    font-weight: bolder; }
+  .containerEmailEnviado .imgNotifEnviado {
+    width: 50%;
+    margin-top: 1.5rem; }
+  .containerEmailEnviado .msjEnviado {
+    position: relative;
+    background-color: #CFCFCF;
+    color: #707070;
+    padding: 1rem;
+    _font-size: 1.1rem;
+    border-radius: 9px;
+    margin: 1rem;
+    text-align: left; }
+    .containerEmailEnviado .msjEnviado .circuloAviso {
+      position: absolute;
+      background-color: #9660FD;
+      width: 2.12rem;
+      height: 2.2rem;
+      border-radius: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid white;
+      right: -1rem;
+      top: -1rem;
+      color: white; }
+
 @media only screen and (min-width: 1281px) {
   html {
     font-size: 120%; }
@@ -112,6 +196,9 @@ html {
 
   html {
     font-size: 120%; }
+
+  .botoneraProductos {
+    margin: 2.25rem 0 0 0 !important; }
 
   .containerLeft, .containerRight {
     padding: 100px 0 100px 0;
@@ -153,7 +240,7 @@ html {
 
 .productButton {
   background-color: #60D5FD;
-  border-radius: 5px;
+  border-radius: 14px;
   border: none;
   color: white;
   height: 3.5rem;
@@ -176,22 +263,51 @@ html {
   border: none;
   color: #707070;
   box-shadow: 0px 3px 6px #00000029;
-  padding: 7px;
+  padding: .5rem;
   _font-weight: 900;
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 15px;
+  width: 100%;
+  _margin-left: 10%;
+  margin-bottom: 1rem;
   font-size: 1rem; }
+
+.space {
+  height: 2rem; }
+
+.botoneraProductos {
+  margin: 2.25rem 2.5rem 0 2.5rem; }
+
+.imgPuntosChiquitos {
+  width: 1rem;
+  position: absolute;
+  top: 2.2rem;
+  left: -1.8rem; }
+
+.imgPuntosGrandesSuperior {
+  width: 1.25rem;
+  position: absolute;
+  top: 2.2rem;
+  left: -1.9rem; }
+
+.imgPuntosGrandesInferior {
+  width: 1.25rem;
+  position: absolute;
+  bottom: 1.25rem;
+  right: -1.9rem; }
+
+.imgOndaVertical {
+  width: .5rem;
+  position: absolute;
+  bottom: 1.2rem;
+  right: -1.7rem; }
 
 .contenedorScroll {
   overflow-y: scroll;
-  height: 300px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
+  height: 19rem;
+  padding: .7rem 1.25rem .7rem 1.25rem; }
 
 .tituloProducto {
   background-color: #60D5FD;
-  border-radius: 13px 13px 0 0 !important;
+  border-radius: 13px !important;
   border: none;
   color: white;
   background: #60D5FD 0% 0% no-repeat padding-box;
@@ -207,7 +323,8 @@ html {
   align-items: center;
   _padding-right: .9rem;
   padding-left: .9rem;
-  padding-right: .9rem; }
+  padding-right: .9rem;
+  height: 4rem; }
   .tituloProducto .contProducto {
     width: 100%;
     display: flex;
@@ -279,16 +396,12 @@ h5, h6 {
   margin-bottom: 25px;
   color: #707070; }
 
-/* @import 'partials/sendEmail';
-@import 'partials/emailEnviado';
-@import 'partials/home';
-@import 'partials/login';
-*/
 .form .field {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end; }
+  align-items: flex-end;
+  color: #707070; }
   .form .field .toComplete {
     width: calc(100% - 2.6rem); }
     .form .field .toComplete label {
@@ -301,13 +414,36 @@ h5, h6 {
       margin-bottom: 5px;
       font-size: 1rem;
       border: 1px solid #e6e6e6;
-      border-radius: 5px; }
+      border-radius: 5px;
+      padding-left: .5rem;
+      padding-right: .5rem;
+      color: #707070; }
+  .form .field .containerMSJ {
+    background-color: white;
+    width: 100%;
+    font-size: .8rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: .7rem;
+    margin-bottom: 2rem; }
+.form .adjunto {
+  width: 100%;
+  background-color: #D5D5D5;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding-left: 1.5rem; }
 .form .containerLink {
   width: calc(100% - 2.6rem);
   margin-left: 2rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 1rem; }
   .form .containerLink .link {
     font-size: .9rem;
     color: #9660FD; }
+  .form .containerLink .aclaracion {
+    font-size: .9rem;
+    color: #707070; }
 
 /*# sourceMappingURL=main.css.map */

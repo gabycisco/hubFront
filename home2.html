@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Hub - Home</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,36 +13,44 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-light bg-light">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="media/icons/ayuda.svg" alt=""></a>
+        
+        <div class="navBar">
+            <nav>
+                <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="media/icons/ayuda.svg" alt=""></a>            
+            </nav>
+        </div>
+        
+        <!-- INICIO - CONTENEDOR PRINCIPAL -->
+        <div class="content">
 
-        </nav>
+            <div class="containerLeft less100px">
 
-        <div class="maxWidth">
-            <div class="displayLeft">
-            
-                <div class="imagenPrincipalLeft">
+                <div class="containerWelcome">
+                    
                     <img class="imgLateralScreen" src="media/imgs/chica1.svg" alt="">
+
                 </div>
-                
-                
+
             </div>
-            <div class="displayRight">
+
+            <div class="containerRight less100px">
+              
                 <div class="containerSeleccion" style="position: relative;">
                     <img src="media/imgs/puntosChiquitos.svg" width="13px" alt="" style="position: absolute; position: absolute; top: 35px; left: -30px;">
                     <img src="media/imgs/puntosGrandes.svg" width="20px" alt="" style="position: absolute; position: absolute; bottom: 20px; right: -30px;">
                     <div class="tituloProducto prod1">                    
                         <div class="contProducto">
-                            <img src="media/icons/cableFiber.svg" width="40px" alt="">                    
+                            <img class="productIcon" src="media/icons/cableFiber.svg" alt="">                    
                             <div class="text">                    
-                                CABLE/FIBER    
+                                CABLE/FIBER <span>&nbsp;-&nbsp;</span><span class="tituloItemSeleecionable">Item seleccionable</span>    
                             </div>
                             
                         </div>                    
                         <a href="#">
-                            <img class="botonVolver" src="media/buttons/volver.svg" width="30px" alt="">
+                            <img class="returnButton" src="media/buttons/volver.svg" alt="">
                         </a>
                     </div>
+                    <div class="space"></div>
                     <h5>Seleccioná el contenido a enviar</h5>
                     <div class="contenedorScroll">
                         <button class="botonContenido">
@@ -86,41 +94,44 @@
     
                 </div>
             </div>
+
         </div>
 
-
-        <footer style="width: 100%;">
-            <nav class="footer navbar-light bg-light" style="background-color: #b38bff!important;">
+        <!-- FIN - CONTENEDOR PRINCIPAL -->
+        <footer>
+            <nav>
                 <img class="otherBrand" src="media/brands/others.svg"alt="">
                 <img class="tecoBrand" src="media/brands/teco.svg" alt="">
             </nav>
         </footer>
+    </div>
 
-        <!-- Modal Ayuda -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 50000;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="border: 0;">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button> -->
-                    <a href=""> <img src="media/buttons/cerrar.svg" width="22px" alt=""></a>
-                    </div>
-                    <div class="modal-body">
-                        <span class="tituloModal">¿Dudas o consultas?</br></span>
-                        <span class="textModal">Envianos un e-mail a <a href="mailto:asistenciaalaoperacion@teco.com.ar">asistenciaalaoperacion@teco.com.ar</a>.</span>
-                        <div class="imgModal">
-                            <img  src="media/imgs/DudasYConsultas.svg" width="30%" alt="">
-                        </div>
+
+    <!-- Modal Ayuda -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 50000;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border: 0;">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+                <a href=""> <img src="media/buttons/cerrar.svg" width="22px" alt=""></a>
+                </div>
+                <div class="modal-body">
+                    <span class="tituloModal">¿Dudas o consultas?</br></span>
+                    <span class="textModal">Envianos un e-mail a <a href="mailto:asistenciaalaoperacion@teco.com.ar">asistenciaalaoperacion@teco.com.ar</a>.</span>
+                    <div class="imgModal">
+                        <img  src="media/imgs/DudasYConsultas.svg" width="30%" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>    
+    <script src="js/popper.min.js"></script>  
 </body>
 </html>

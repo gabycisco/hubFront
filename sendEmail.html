@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub - Enviar E-mail</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        
+        <div class="navBar">
+            <nav>
+                <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="media/icons/ayuda.svg" alt=""></a>            
+            </nav>
+        </div>
+        
+        <!-- INICIO - CONTENEDOR PRINCIPAL -->
+        <div class="content">
+
+            <div class="containerLeft less100px">
+
+                <div class="containerWelcome">
+                    
+                    <img class="imgLateralScreen" src="media/imgs/chica2.svg" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="containerRight less100px">
+              
+                <div class="containerSendEmail" style="position: relative;">
+                    <img class="imgPuntosGrandesSuperior" src="media/imgs/puntosGrandes.svg" alt="">
+                    <img class="imgOndaVertical" src="media/imgs/ondaVertical.svg" alt="">
+                    
+                    <form class="form" action="">
+                        
+                        <div class="field">
+                            <img class="formIcon" src="media/icons/mail.svg" alt="" >
+                            <div class="toComplete">
+                                <label for="">EMAIL</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <img class="formIcon" src="media/icons/url.svg" alt="">                          
+                            <div class="toComplete">
+                                <label for="">URL://</label>
+                                <input type="text">
+                            </div>                        
+                        </div>
+                        <div class="field">
+                            <img class="formIcon" src="media/icons/tramiteExpediente.svg" alt="">                          
+                            <div class="toComplete">
+                                <label for="">ID de trámite/Expediente</label>
+                                <input type="text">
+                            </div>                        
+                        </div>
+                        <div class="field">
+                            <div class="containerLink">
+                                <span class="aclaracion">Aplica para Organismos oficiales, Back Office y Enacom</span>
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <div class="containerLink" style="position: relative;">
+                                <img class="adjuntoIcon" src="media/icons/adjunto.svg" alt="">                          
+                                <a href="#"><input class="adjunto" type="text" style="width: 100%;"></a>
+                                <span class="aclaracion"><b>Aclaracion:</b> Admite sólo formatos PDF, JPG y BMP</span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="containerMSJ">
+                                Hola! Como lo prometimos te enviamos el link de acceso a nuestro portal de autogestión. </br>
+                                <b>Hacé click acá</b> </br></br>
+                                Muchas gracias!
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <div class="containerLink">
+                                <input class="botonPrimario" type="submit" value="ENVIAR">
+                            </div>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIN - CONTENEDOR PRINCIPAL -->
+        <footer>
+            <nav>
+                <img class="otherBrand" src="media/brands/others.svg"alt="">
+                <img class="tecoBrand" src="media/brands/teco.svg" alt="">
+            </nav>
+        </footer>
+    </div>
+
+
+    <!-- Modal Ayuda -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 50000;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border: 0;">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+                <a href=""> <img src="media/buttons/cerrar.svg" width="22px" alt=""></a>
+                </div>
+                <div class="modal-body">
+                    <span class="tituloModal">¿Dudas o consultas?</br></span>
+                    <span class="textModal">Envianos un e-mail a <a href="mailto:asistenciaalaoperacion@teco.com.ar">asistenciaalaoperacion@teco.com.ar</a>.</span>
+                    <div class="imgModal">
+                        <img  src="media/imgs/DudasYConsultas.svg" width="30%" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>  
+</body>
+</html>

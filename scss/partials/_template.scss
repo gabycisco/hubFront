@@ -19,20 +19,21 @@
     min-height: calc(100vh - 100px);      
     display: flex;      
     background-color: $color-1;
+    _min-height: 650px;
 }
 
 .containerLeft, .containerRight{    
     background-color: $color-1;
     width: 50%;
     _min-height: calc(100vh - 100px);
-    min-height: 600px;
+    _min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 700px;
 }
     
 .containerWelcome{
-    _background-color: red;
     max-width: 32rem;       
     width: 80%;
     display: block;
@@ -100,6 +101,37 @@
 }
 
 
+.containerSeleccion{
+    background-color: $color-2;
+    width: 30rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 9px #00000029;
+    display: block;
+    border-radius: 13px;
+    padding: 4rem 2rem 3rem 2rem;
+    h5{
+        margin-top: 1rem;
+    }
+}
+
+
+.containerSendEmail{
+    background-color: $color-2;
+    width: 30rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 9px #00000029;
+    display: block;
+    border-radius: 13px;
+    padding: 3rem 1.50rem 2.5rem 1.50rem;
+
+    .botonPrimario{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+
 .returnButton{
     width: 2.5rem;
 }
@@ -121,8 +153,84 @@
     margin:0 .5rem .5rem 0;
 }
 
+.adjuntoIcon{
+    position: absolute;
+    width: 1.75rem;
+    margin:0 .5rem .5rem 0;
+
+    
+}
+
+.prod1, .prod2, .prod3, .prod4{
+    margin-bottom: 1rem;
+}
 
 
+.prod1{
+    background-color: $color-6!important ;   
+   }
+   
+.prod2{
+    background-color: $color-7!important;   
+}
+
+.prod3{
+    background-color: $color-3!important;   
+}
+
+.prod4{
+    background-color: $color-8!important;   
+}
+
+.containerEmailEnviado{
+    background-color: $color-2;
+    max-width: 26.5rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 9px #00000029;
+    display: block;
+    border-radius: 13px;
+    padding: 3rem 1.25rem 2rem 1.25rem;
+    text-align: center;
+    color: $color-4;
+    position: relative;
+
+    h1{
+        color: $color-3;    
+        font-weight: bolder;
+    }
+    
+    .imgNotifEnviado{
+        width: 50%;        
+        margin-top: 1.5rem;
+    }
+
+    .msjEnviado{
+        position: relative;
+        background-color: $color-10;
+        color: $color-4;
+        padding: 1rem;
+        _font-size: 1.1rem;
+        border-radius: 9px;
+        margin: 1rem;
+        text-align: left;
+
+        .circuloAviso{
+            position: absolute;
+            background-color: $color-1;
+            width: 2.12rem;
+            height: 2.2rem;
+            border-radius: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            right: -1rem;
+            top: -1rem;
+            color: white;
+        }
+    }
+
+}
 
 @media only screen and (min-width: 1281px) {
     html{
@@ -143,6 +251,9 @@
         font-size: 120%;
     }
 
+    .botoneraProductos{
+        margin: 2.25rem 0 0 0!important;
+    }
 
     .containerLeft, .containerRight{    
         padding: 100px 0 100px 0;
