@@ -84,6 +84,17 @@ html {
       border: 5px solid white;
       border-radius: 10rem; }
 
+.containerSeleccionProducto {
+  background-color: #F5F5F5;
+  width: 26rem;
+  background: #F5F5F5 0% 0% no-repeat padding-box;
+  box-shadow: 8px 8px 9px #00000029;
+  display: block;
+  border-radius: 13px;
+  padding: 2.5rem 1.25rem 5rem 1.25rem; }
+  .containerSeleccionProducto h5 {
+    margin-top: 1rem; }
+
 .containerSeleccion {
   background-color: #F5F5F5;
   width: 30rem;
@@ -183,7 +194,7 @@ html {
       top: -1rem;
       color: white; }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1440px) {
   html {
     font-size: 120%; }
 
@@ -255,7 +266,7 @@ html {
   .productButton .text {
     text-align: left;
     margin-left: 1rem;
-    width: 80%; }
+    width: 65%; }
 
 .botonContenido {
   background-color: #E3E3E3;
@@ -407,7 +418,8 @@ h5, h6 {
     .form .field .toComplete label {
       margin: 0;
       margin-top: 10px;
-      font-size: 1rem;
+      font-size: .8rem;
+      _font-weight: bold;
       color: #707070; }
     .form .field .toComplete input {
       width: 100%;
@@ -421,11 +433,13 @@ h5, h6 {
   .form .field .containerMSJ {
     background-color: white;
     width: 100%;
-    font-size: .8rem;
+    font-size: .7rem;
     border: 1px solid #e6e6e6;
     border-radius: 5px;
-    padding: .7rem;
-    margin-bottom: 2rem; }
+    padding: .5rem;
+    margin-bottom: 2rem;
+    margin-right: .4rem;
+    margin-left: .4rem; }
 .form .adjunto {
   width: 100%;
   background-color: #D5D5D5;
@@ -440,10 +454,10 @@ h5, h6 {
   margin-left: 2rem;
   margin-bottom: 1rem; }
   .form .containerLink .link {
-    font-size: .9rem;
+    font-size: .7rem;
     color: #9660FD; }
   .form .containerLink .aclaracion {
-    font-size: .9rem;
+    font-size: .7rem;
     color: #707070; }
 
 /*# sourceMappingURL=main.css.map */

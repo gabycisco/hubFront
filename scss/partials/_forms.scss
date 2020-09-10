@@ -16,7 +16,8 @@
             label{
                 margin: 0;
                 margin-top: 10px;
-                font-size: 1rem;
+                font-size: .8rem;
+                _font-weight: bold;
                 color: $color-4;
             }
             
@@ -39,11 +40,13 @@
         .containerMSJ{
             background-color: white;
             width: 100%;
-            font-size: .8rem;
+            font-size: .7rem;
             border: 1px solid #e6e6e6;
             border-radius: 5px;
-            padding: .7rem;
+            padding: .5rem;
             margin-bottom: 2rem;
+            margin-right: .4rem;
+            margin-left: .4rem;
         }
         
     }
@@ -66,13 +69,13 @@
     
         .link/* Link ¿Olvidaste tu contraseña? */
         {
-            font-size: .9rem;
+            font-size: .7rem;
             color:$color-1;
         }
         
         .aclaracion
         {
-            font-size: .9rem;
+            font-size: .7rem;
             color:$color-4;
         }
 
