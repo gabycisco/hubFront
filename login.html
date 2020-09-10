@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Hub - Login</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -13,84 +13,101 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-light bg-light">
-            <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="media/icons/ayuda.svg" alt=""></a>
+        
+        <div class="navBar middleRight">
+            <nav>
+                <a href="#" data-toggle="modal" data-target="#exampleModal"><img src="media/icons/ayuda.svg" alt=""></a>            
+            </nav>
+        </div>
+        
+        <!-- INICIO - CONTENEDOR PRINCIPAL -->
+        <div class="content less50px">
 
-          </nav>
-        <div class="displayLeft displayLeftLogin">
-            
-            <div class="containerBienvenida">
-                <div class="text">
-                    <h1>Hola!<br>
-                        <span class="light">Bienvenido a </span> Hub!</h1>
-                        <img class="imgHub" src="media/brands/hub.svg" alt="">
+            <div class="containerLeft containerBienvenida">
+
+                <div class="containerWelcome">
+                    <div class="text">
+                        <h1>Hola!<br>
+                            <span class="light">Bienvenido a </span> Hub!</h1>
+                            <img class="imgHub" src="media/brands/hub.svg" alt="">
+                    </div>
+                                        
+                    <img src="media/imgs/principal.svg" width="100%" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="containerRight fullDisplay">
+              
+                <div class="containerLogin fullWidth">
+                    <div class="imgPerfil">
+                        <img src="media/imgs/fotoPerfil.svg" alt="">
+                    </div>
+                    <form class="form" action="">
+                        
+                        <div class="field">
+                            <img class="formIcon" src="media/icons/usuario.svg" alt="" >
+                            <div class="toComplete">
+                                <label for="">USUARIO</label>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <img class="formIcon" src="media/icons/password.svg" alt="">                          
+                            <div class="toComplete">
+                                <label for="">CONTRASEÑA</label>
+                                <input type="password">
+                            </div>                        
+                        </div>
+                        <div class="field">
+                            <div class="containerLink">
+                                <a class="link" href="#">¿Olvidaste tu contraseña?</a>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="containerLink">
+                                <input class="botonPrimario" type="submit" value="ENVIAR">
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 
-                <!-- <div class="imgPrincipal"> -->
-                    <img src="media/imgs/principal.svg" width="100%" alt="">
-                <!-- </div> -->
             </div>
-            
-            
+
         </div>
-        <div class="displayRight">
-            <div class="containerLogin">
-                <div class="imgPerfil">
-                    <img src="media/imgs/fotoPerfil.svg" alt="">
+
+        <!-- FIN - CONTENEDOR PRINCIPAL -->
+
+    </div>
+
+
+    <!-- Modal Ayuda -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 50000;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="border: 0;">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button> -->
+                <a href=""> <img src="media/buttons/cerrar.svg" width="22px" alt=""></a>
                 </div>
-                <form class="form" action="">
-                    <div class="field">
-                        <div class="icon">
-                            <img src="media/icons/usuario.svg" width="100%" alt="">
-                        </div>
-                        <div class="toComplete">
-                            <label for="">USUARIO</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="icon">
-                            <img src="media/icons/password.svg" width="100%" alt="">
-                        </div>
-                        <div class="toComplete">
-                            <label for="">CONTRASEÑA</label>
-                            <input type="password">
-                        </div>                        
-                    </div>
-                    <div class="link">
-                        <a class="link" href="#">¿Olvidaste tu contraseña?</a>
-                    </div>
-
-                    <input class="botonPrimario" type="submit" value="ENVIAR">
-                </form>
-            </div>
-        </div>
-
-        <!-- Modal Ayuda -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="z-index: 50000;">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" style="border: 0;">
-                    <h5 class="modal-title" id="exampleModalLabel"></h5>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button> -->
-                    <a href=""> <img src="media/buttons/cerrar.svg" width="22px" alt=""></a>
-                    </div>
-                    <div class="modal-body">
-                        <span class="tituloModal">¿Dudas o consultas?</br></span>
-                        <span class="textModal">Envianos un e-mail a <a href="mailto:asistenciaalaoperacion@teco.com.ar">asistenciaalaoperacion@teco.com.ar</a>.</span>
-                        <div class="imgModal">
-                            <img  src="media/imgs/DudasYConsultas.svg" width="30%" alt="">
-                        </div>
+                <div class="modal-body">
+                    <span class="tituloModal">¿Dudas o consultas?</br></span>
+                    <span class="textModal">Envianos un e-mail a <a href="mailto:asistenciaalaoperacion@teco.com.ar">asistenciaalaoperacion@teco.com.ar</a>.</span>
+                    <div class="imgModal">
+                        <img  src="media/imgs/DudasYConsultas.svg" width="30%" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>    
+    <script src="js/popper.min.js"></script>  
 </body>
 </html>

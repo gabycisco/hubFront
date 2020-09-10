@@ -1,37 +1,182 @@
-.container-fluid{
-    
-    background-color: $color-1;
+.less50px{
+    height: calc(100vh - 50px);
+}
+
+.less100px{
+    height: calc(100vh - 100px);
+}
+
+.container-fluid{    
     width: 100%;
     height: 100vh;
+    display: block;
+    overflow: auto;
     padding:0;
+}
+
+.content{
+    width: 100%;
+    min-height: calc(100vh - 100px);      
+    display: flex;      
+    background-color: $color-1;
+}
+
+.containerLeft, .containerRight{    
+    background-color: $color-1;
+    width: 50%;
+    _min-height: calc(100vh - 100px);
+    min-height: 600px;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+}
     
-    .displayLeft{
-        width: 50%;
-        height: 100vh;
+.containerWelcome{
+    _background-color: red;
+    max-width: 32rem;       
+    width: 80%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    .text{                
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        .imagenPrincipalLeft{
-            max-width: 500px;        
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .imgLateralScreen{
-                height: 60vh;
-                max-width: 450px;
-            }
+        h1{
+            text-align: center;
+            color: $color-3;
+            font-weight: bolder;
+
+        }
+        .light{
+            font-weight: lighter;
+        }
+        
+        .imgHub{
+            width: 2.5rem;
+            _background-color: red;
+            margin-top: 2rem;
+            margin-left: .5rem;
+        }
+
+    }
+    .imgPrincipal{
+        background-color: red; 
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        }
+
+    
+}
+
+.containerLogin{    
+    background-color: $color-2;
+    width: 25rem;
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    box-shadow: 8px 8px 9px #00000029;
+    display: block;
+    border-radius: 1rem;
+    padding: 3rem 1.50rem 2rem 1.50rem;
+
+    .imgPerfil{
+        width: 60%;
+        margin-left: 20%;
+        margin-bottom: 1.2rem;            
+
+        img{
+            width: 100%;
+            border: 5px solid white;
+            border-radius: 10rem;
+            
+
         }
     }
 
-    .displayRight{
+}
+
+
+.returnButton{
+    width: 2.5rem;
+}
+
+.productIcon{
+    width: 2.5rem;
+}
+
+.productIconSmall{
+    width: 2.2rem;
+}
+
+.productIconBig{
+    width: 3rem;
+}
+
+.formIcon{
+    width: 1.5rem;
+    margin:0 .5rem .5rem 0;
+}
+
+
+
+
+@media only screen and (min-width: 1281px) {
+    html{
+        font-size: 120%;
+    }
+/*     .containerLogin{
         width: 50%;
-        height: 100vh;
+    } */
+}
+
+
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    .content{    
+        display: block;  
+    }
+    
+    html{
+        font-size: 120%;
+    }
+
+
+    .containerLeft, .containerRight{    
+        padding: 100px 0 100px 0;
+        width: 100%;        
         display: flex;
         justify-content: center;
         align-items: center;
     }
-}
+
+    .containerLeft{
+        height: calc(100vh - 50px);
+    }
+
+    .containerRight{
+        _height: 100vh;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .middleRight{
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+
+    .fullDisplay{
+        height: 100vh;
+    }
+
+    .less100px{
+        height: calc(100vh - 50px);
+    }
+
+    .fullWidth{
+        width: 100%!important;
+    }
+    
+} 

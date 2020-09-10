@@ -7,10 +7,15 @@ $color-6: #FE5B7E;
 $color-7: #6084FD;
 $color-8: #7F3DFC;
 $color-9: #E3E3E3;
+$color-10: #CFCFCF;
 
-html{
-    font-size: 14px;
-    color: $color-4;
+
+.containerBienvenida{
+    background-color: white!important;
 }
 
-
+html{
+    font-size: 100%; /* 100% = 16px */
+    color: $color-4;
+    background-color: $color-1;   
+}

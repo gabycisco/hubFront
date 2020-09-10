@@ -2,6 +2,7 @@
 .displayLeftLogin{
     background-color: white!important;
     z-index: 1030!important;
+    height: 100vh!important;
     .containerBienvenida{
         max-width: 500px;        
         width: 80%;
@@ -47,7 +48,7 @@
         border-radius: 13px;
         padding: 5rem 1.50rem 4rem 1.50rem;
 
-        .imgPerfil{
+/*         .imgPerfil{
             width: 60%;
             margin-left: 20%;
             margin-bottom: 10px;            
@@ -58,7 +59,7 @@
                 
 
             }
-        }
+        } */
 
         .botonPrimario{
             width: 80%;

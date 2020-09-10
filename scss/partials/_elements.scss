@@ -1,13 +1,37 @@
 .botonPrimario{
     background-color: $color-3;
-    border-radius: 5px;
+    border-radius: .5rem;
     border: none;
     color: white;
     background: #60D5FD 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     padding: 7px;
     font-weight: 900;
+    width: 100%;
     
+}
+
+
+.productButton{
+    background-color: $color-3;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 3.5rem;
+    background: #60D5FD 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: .6rem 2rem .6rem 2rem;
+    font-weight: 900; 
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .text{
+        text-align: left;
+        margin-left: 1rem;
+        width: 80%;
+    }
 }
 
 .botonContenido{
@@ -21,7 +45,7 @@
     width: 80%;
     margin-left: 10%;
     margin-bottom: 15px;    
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 
@@ -49,33 +73,63 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 10px;
+    _padding-right: .9rem;
+    padding-left: .9rem;
+    padding-right: .9rem;
+    
     .contProducto{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 3rem;
+    
         .text{
-            width: 100%!important;
-            font-size: .8rem;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            margin: 0;
+    
+            .tituloItemSeleecionable{
+                font-weight: 300;
+                font-size: 1rem;
+            }
         }
-    } 
+    }
 }
 
-.navbar{
+.middleRight{
+    margin-left: 50%;
+    width: 50%;
+}
+
+.navBar{
     box-shadow: 0px 3px 6px #00000029;
-    background-color: $color-5!important;
+    background-color: $color-5;
     height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 10px;
+    
     img{
         width: 35px;
     }
 }
 
-.footer{
-    display: flex;
-    justify-content: space-between;
-    height: 50px!important;
-    padding-right: 10px;
-    align-items: center;
+footer{
+    background-color: #b38bff;
+    height: 50px;
+    width: 100%;
+    
+    nav{
+        height: 50px!important;
+        padding-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
     .otherBrand, .tecoBrand{
         height: 35px;
     }
@@ -109,6 +163,7 @@
         margin-bottom: 15px;
     }
 }
+
 
 
 

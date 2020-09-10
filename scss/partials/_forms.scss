@@ -8,25 +8,10 @@
         display: flex;
         justify-content: center;
         align-items: flex-end;
-        padding: 0 20px 0 0;
-        
-        .icon{
-            width: 50px;            
-            margin-bottom: 8px;
-            padding-right: 10px;
-            display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
-            
-            img{
-                width: 20px;
-            }
-        }
-        
+                
         .toComplete/* contenedor: label + input */
             {
-            width: calc(100% - 50px);
-            _background-color: green;
+            width: calc(100% - 2.6rem);
       
             label{
                 margin: 0;
@@ -47,13 +32,18 @@
         
     }
     
-    .link/* Link ¿Olvidaste tu contraseña? */
-    {
-        margin-bottom: 25px;                
-        width: 100%;
-        font-size: .9rem;
-        margin-left: 25px;
-        color:$color-1;
+
+    .containerLink{
+        width: calc(100% - 2.6rem);
+        margin-left: 2rem;
+        margin-bottom: 2rem;                
+    
+        .link/* Link ¿Olvidaste tu contraseña? */
+        {
+            font-size: .9rem;
+            color:$color-1;
+        }
+
     }
 
     
