@@ -35,7 +35,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 700px; }
+  min-height: 550px; }
 
 .containerWelcome {
   max-width: 32rem;
@@ -161,7 +161,7 @@ html {
   box-shadow: 8px 8px 9px #00000029;
   display: block;
   border-radius: 13px;
-  padding: 3rem 1.25rem 2rem 1.25rem;
+  padding: 4rem 1.25rem 3rem 1.25rem;
   text-align: center;
   color: #707070;
   position: relative; }
@@ -169,14 +169,14 @@ html {
     color: #60D5FD;
     font-weight: bolder; }
   .containerEmailEnviado .imgNotifEnviado {
-    width: 50%;
+    width: 35%;
     margin-top: 1.5rem; }
   .containerEmailEnviado .msjEnviado {
     position: relative;
     background-color: #CFCFCF;
     color: #707070;
     padding: 1rem;
-    _font-size: 1.1rem;
+    font-size: .9rem;
     border-radius: 9px;
     margin: 1rem;
     text-align: left; }
